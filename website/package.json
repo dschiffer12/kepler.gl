@@ -9,12 +9,12 @@
     "node": ">=10.0.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --env.prod --content-base ./src/static --progress --open",
-    "start-prod": "webpack-dev-server -p --env.prod --content-base ./src/static --progress --open",
+    "start": "webpack-dev-server --openssl-legacy-provider --mode development --env.prod --content-base ./src/static --progress --open",
+    "start-prod": "webpack-dev-server -p --openssl-legacy-provider --env.prod --content-base ./src/static --progress --open",
     "build-clean": "rm -rf ./dist && mkdir dist",
     "build-static": "cp -r ./src/static/* dist",
     "build-script": "webpack -p --env.prod",
-    "build": "npm run build-clean && npm run build-static && npm run build-script",
+    "build": "npm run --openssl-legacy-provider build-clean && npm run --openssl-legacy-provider build-static && npm run --openssl-legacy-provider build-script",
     "lint": "eslint src"
   },
   "dependencies": {
