@@ -105,8 +105,7 @@ const COMMON_CONFIG = {
   plugins: [
     // Provide default values to suppress warnings
     new webpack.EnvironmentPlugin({
-      MapboxAccessToken: "pk.eyJ1IjoiZHNjaGlmZmVyMTIiLCJhIjoiY2xqamZxbDI1MDc4eTNsbXVicTdjejJ3dSJ9._NByAmrSDuql8wvmwk2fqg",
-      MapboxExportToken: "pk.eyJ1IjoiZHNjaGlmZmVyMTIiLCJhIjoiY2xiZHQ5bTFuMDRtajNvbzQ3c3VudmhvMiJ9.2uvgoSuAn4BT_WJxTGQCZw"
+      MapboxAccessToken: undefined,
     })
   ],
 
