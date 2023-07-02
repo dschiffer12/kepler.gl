@@ -14,7 +14,7 @@
     "build-clean": "rm -rf ./dist && mkdir dist",
     "build-static": "cp -r ./src/static/* dist",
     "build-script": "webpack -p --env.prod",
-    "build": "npm run --openssl-legacy-provider build-clean && npm run --openssl-legacy-provider build-static && npm run --openssl-legacy-provider build-script",
+    "build": "npm run --openssl-legacy-provider build-clean && npm run --openssl-legacy-provider build-static && npm run --openssl-legacy-provider build-script --openssl-legacy-provider",
     "lint": "eslint src"
   },
   "dependencies": {
