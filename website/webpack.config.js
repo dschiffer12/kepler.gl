@@ -106,10 +106,6 @@ const COMMON_CONFIG = {
     // Provide default values to suppress warnings
     new webpack.EnvironmentPlugin({
       MapboxAccessToken: undefined,
-      DropboxClientId: null,
-      CartoClientId: null,
-      GoogleDriveClientId: null,
-      MapboxExportToken: null
     })
   ],
 
